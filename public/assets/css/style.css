@@ -91,6 +91,30 @@ button {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+.ptb-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.ptb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ptb-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.ptb-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ptb-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ptb-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .bg-f7fafd {
     background-color: #f7fafd;
@@ -5550,29 +5574,32 @@ Blog Area CSS
     -webkit-transition: 0.5s;
     transition: 0.5s;
     margin-bottom: 30px;
-}
-
-.single-blog-post .blog-image {
     border-radius: 10px;
-    position: relative;
-    height: 300px;
     border: 1px solid rgb(71, 71, 71);
 }
 
 .single-blog-post .blog-image img {
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     width: 100%;
-    height: 300px;
+    height: 350px;
+}
+.single-blog-post .blog-image1 img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 200px;
 }
 
 .single-blog-post .blog-image a {
+    display: block;
+}
+.single-blog-post .blog-image1 a {
     display: block;
 }
 
 .single-blog-post .blog-image .date {
     position: absolute;
     left: 20px;
-    bottom: -20px;
+    top: 20px;
     background: -webkit-gradient(
         linear,
         left top,
@@ -8206,8 +8233,8 @@ Success Story Area CSS
 .single-success-story-box .content p {
     margin: 0;
     color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .single-success-story-box .content h3 {
@@ -10217,3 +10244,29 @@ Footer Area CSS
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.contact-map {
+    height: 450px;
+    margin-top: 75px;
+    filter: grayscale(100%);
+}
+
+@media (max-width: 991px) {
+    .contact-map {
+        margin-top: 55px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-map {
+        height: 350px;
+        margin-top: 45px;
+    }
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+}

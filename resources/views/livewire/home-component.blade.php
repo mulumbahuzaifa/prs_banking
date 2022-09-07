@@ -28,7 +28,7 @@
             @foreach ($services as $service)
             <div class="single-partner-item">
                     <div class="single-blog-post">
-                        <div class="blog-image">
+                        <div class="blog-image1">
                             <a href="{{ route('service.detail',['slug' =>$service->slug]) }}">
                                 <img src="{{ asset('assets/img/category') }}/{{ $service->image }}" alt="{{ $service->name }}">
                             </a>
@@ -47,7 +47,7 @@
 
             <div class="single-partner-item">
                 <div class="single-blog-post">
-                    <div class="blog-image">
+                    <div class="blog-image1">
                         <a href="single-blog.html">
                                     <img src="{{ asset('assets/img/GettyImages-949278532.webp') }}" alt="image">
                                 </a>
@@ -68,7 +68,7 @@
 
             <div class="single-partner-item">
                 <div class="single-blog-post">
-                    <div class="blog-image">
+                    <div class="blog-image1">
                         <a href="single-blog.html">
                                     <img src="{{ asset('assets/img/fin003-pix-data.jpg') }}" alt="image">
                                 </a>
@@ -88,7 +88,7 @@
 
             <div class="single-partner-item">
                 <div class="single-blog-post">
-                    <div class="blog-image">
+                    <div class="blog-image1">
                         <a href="single-blog.html">
                                     <img src="{{ asset('assets/img/product_8.jpg') }}" alt="image">
                                 </a>
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="blog-post-content">
-                        <h3><a href="single-blog.html">Tips For Your Business</a></h3>
+                        <h3><a href="single-blog.html">Business Tips</a></h3>
 
 
                         <a href="single-blog.html" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
@@ -127,7 +127,7 @@
 
             <div class="col-lg-7 col-md-12">
                 <div class="payment-experience-image text-center">
-                    <img src="{{ asset('assets/img/experience-img1.png') }}" alt="image">
+                    <img src="{{ asset('assets/img/House_Money.webp') }}" alt="image" style="border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -183,8 +183,8 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="support-image">
-                    <img src="{{ asset('assets/img/support-img1.png') }}" alt="image">
-                    <img src="{{ asset('assets/img/support-img2.png') }}" alt="image">
+                    <img src="{{ asset('assets/img/support-img2.png') }}" style="width: 100%; height: 100%; border-radius: 10px;" alt="image">
+                    <img src="{{ asset('assets/img/images.jpg') }}" style="border-radius: 10px;" alt="image">
                 </div>
             </div>
 
@@ -313,7 +313,7 @@
 <!-- End Testimonials Area -->
 
 <!-- Start Success Story Area -->
-<section class="success-story-area ptb-70 pt-0">
+<section class="success-story-area ptb-60 pt-0">
     <div class="container">
         <div class="section-title">
             <h2>Business success story</h2>
@@ -325,15 +325,16 @@
                     <div class="row m-0 align-items-center">
                         <div class="col-lg-6 col-md-6 p-0">
                             <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
-                                <h3>John Smith <span>CTO at EnvyTheme</span></h3>
-                                <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="btn btn-primary popup-youtube">Watch Video</a>
+                                <p>MaryBeth Hyland started her company Spark Vision to help businesses create and maintain collaborative and inclusive office cultures. Specializing in millennial engagement, Hyland and Spark Vision offer workshops to help offices foster collaboration and connections among workers.</p>
+                                <p>A child of abuse, Hyland has faced a lot of challenges to her self-worth and confidence. She uses her survival daily as a way to motivate her to succeed in business, drawing on the experience of her past to connect with the people she works with. According to her website, Hyland says she thinks that her experience makes her more successful in her company.</p>
+                                <h3> Smith John<span>CEO at PRS</span></h3>
+                                {{-- <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="btn btn-primary popup-youtube">Watch Video</a> --}}
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-md-6 p-0">
                             <div class="image">
-                                <img src="{{ asset('assets/img/success-story1.jpg') }}" alt="image">
+                                <img src="{{ asset('assets/img/icons/icon5.png') }}" alt="image">
                             </div>
                         </div>
                     </div>
@@ -343,15 +344,16 @@
                     <div class="row m-0 align-items-center">
                         <div class="col-lg-6 col-md-6 p-0">
                             <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
-                                <h3>John Smith <span>CTO at EnvyTheme</span></h3>
-                                <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="btn btn-primary popup-youtube">Watch Video</a>
+                                <p>Virginia-based contracting firm, Halfaker & Associates, deals with data analytics, cybersecurity, software engineering, and IT infrastructure for the federal government. After being wounded in combat in Iraq, Dawn Halfaker worked on Capitol Hill and with various other contractors looking for a way to continue working with the military even after being medically retired.</p>
+                                <p>As a veteran herself, Halfaker knows firsthand what troops in combat need to be successful, and she saw a disconnect between those needs and what people in Washington could provide. This inspired her to start her own company and offer real-world, common-sense solutions to help the military be more effective.</p>
+                                <h3>John Smith <span>CTO at PRS</span></h3>
+                                {{-- <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="btn btn-primary popup-youtube">Watch Video</a> --}}
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-md-6 p-0">
                             <div class="image">
-                                <img src="{{ asset('assets/img/success-story1.jpg') }}" alt="image">
+                                <img src="{{ asset('assets/img/icons/icon11.png') }}" alt="image">
                             </div>
                         </div>
                     </div>
@@ -363,21 +365,20 @@
 <!-- End Success Story Area -->
 
 <!-- Start Global Area -->
-<section class="global-area ptb-70">
+<section class="global-area ptb-60">
     <div class="container">
         <div class="section-title">
-            <h2>Trusted all over the world</h2>
+            <h2>Trusted all over the country</h2>
             <div class="bar"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>We are a leading innovative financial company in Uganda boosted with our dedicated professional, highly trained and disciplined staff in areas of financial products .</p>
         </div>
-
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-12">
                 <div class="global-content">
                     <ul>
-                        <li>10 million customers</li>
-                        <li>2M+ API request per day</li>
-                        <li>75+ countries using</li>
+                        <li>1,000+ trusted customers</li>
+                        <li>100+ request per day</li>
+                        <li>2+ countries using</li>
                         <li>2+ sent every month</li>
                     </ul>
                 </div>

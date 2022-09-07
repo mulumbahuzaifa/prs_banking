@@ -1,4 +1,4 @@
-<x-guest-layout>
+{{-- <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
             <x-jet-authentication-card-logo />
@@ -45,4 +45,72 @@
             </div>
         </form>
     </x-jet-authentication-card>
-</x-guest-layout>
+</x-guest-layout> --}}
+
+<x-guest-layout>
+       <!-- Start Page Title Area -->
+<div class="page-title-area item-bg2 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Login</h2>
+            <p>Gain access throw the form below</p>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+      <section  id="login-section" class="contact-area ptb-70">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                      <div class="form-head login-form">
+                          <h4 class="title mb-30">Login</h4>
+                          <p>Please register in order to checkout more quickly</p>
+                          <!-- Form -->
+                          <x-jet-validation-errors class="mb-4" />
+
+                          @if (session('status'))
+                              <div class="mb-4 font-medium text-sm text-green-600" style="color:red !important;">
+                                  {{ session('status') }}
+                              </div>
+                          @endif
+                          <form class="form" method="POST" action="{{ route('login') }}">
+                              @csrf
+                              <div class="row">
+                                  <div class="input-group mb-3">
+                                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                          <input type="email" class="form-control" name="email" placeholder="" :value="old('email')" autofocus required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                  </div>
+                                  <div class="input-group mb-4">
+                                      <span class="input-group-text" id="basic-addon2"><i class="fa fa-lock"></i></span>
+                                          <input type="password" class="form-control" name="password" placeholder="" required="required" autocomplete="current-password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                                  </div>
+                                  <div class="check-and-pass mb-3">
+                                      <div class="row align-items-center">
+                                          <div class="col-lg-6 col-md-6 col-12">
+                                              <div class="form-check">
+                                                  <input name="remember" id="2" value="forever" type="checkbox" class="form-check-input width-auto" id="exampleCheck1">
+                                                  <label class="form-check-label">Remember me</label>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-12 text-right">
+                                              <a href="{{ route('password.request') }}" class="lost-pass float-end">Lost your password?</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="button mb-3">
+                                      <button type="submit" class="btn btn-primary">Login Now</button>
+                                  </div>
+                                  <p>Don't have an account? <a href="{{ route('register') }}" class="register-link">Register here</a>
+                                  </p>
+
+                              </div>
+                          </form>
+                          <!--/ End Form -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </x-guest-layout>
+

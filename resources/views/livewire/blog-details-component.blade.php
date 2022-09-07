@@ -17,7 +17,7 @@
             <div class="col-lg-8 col-md-12">
                 <div class="blog-details">
                     <div class="article-image">
-                        <img src="{{ asset('assets/img/blog-image') }}/{{ $blog->image }}" alt="{{ $blog->name }}">
+                        <img src="{{ asset('assets/img/blog-image') }}/{{ $blog->image }}" alt="{{ $blog->name }}" style="border-radius: 10px">
                     </div>
 
                     <div class="article-content">

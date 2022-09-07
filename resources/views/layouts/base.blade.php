@@ -71,7 +71,12 @@
 <script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYqLQuGraUmG4HVQQJ1p7fcBpo9k1MLJA&callback=initMap&v=weekly"
+defer
+></script>
 @livewireScripts
+@stack('scripts')
 </body>
 
 </html>
